@@ -1,0 +1,30 @@
+% Example document for trying the report viewer: python3 report_viewer.py docs
+\documentclass[11pt]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath}
+\title{Example Report: Timing a Pendulum}
+\author{Report Viewer example}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Purpose}
+This short document exists so you can try the report viewer. Select a sentence and add a comment, press
+\emph{Read aloud} and tap any word to hear the text from there, or ask a Claude Code session to answer your comments.
+
+\section{Method}
+A small mass hangs from a light string of length $L$. For small swings the period is
+\begin{equation}
+  T = 2\pi\sqrt{\frac{L}{g}},
+\end{equation}
+where $g$ is the acceleration due to gravity. The read-aloud skips display equations like this one and carries
+on with the next sentence. Timing ten swings with a stopwatch and dividing by ten reduces the effect of reaction
+time on each measurement.
+
+\section{What to try}
+Change the length of the string, time the swings again, and plot the period against the square root of the
+length. The points should fall on a straight line through the origin, and its slope gives an estimate of $g$.
+Write down the uncertainty of every timing, because the scatter between repeated measurements shows how far
+the estimate can be trusted.
+
+\end{document}

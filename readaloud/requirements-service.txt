@@ -1,0 +1,17 @@
+# Exact pins for readalong_server.py (Python 3.14). load_voice(intra_op_threads=...)
+# builds Piper's ONNX session itself, relying on piper-tts internals, so bump
+# these only together with a re-test of the service.
+# Voice (not pip): en_US-lessac-medium, from rhasspy/piper-voices
+#   en_US-lessac-medium.onnx       sha256 5efe09e69902187827af646e1a6e9d269dee769f9877d17b16b1b46eeaaf019f
+#   en_US-lessac-medium.onnx.json  sha256 efe19c417bed055f2d69908248c6ba650fa135bc868b0e6abb3da181dab690a0
+flatbuffers==25.12.19
+ml_dtypes==0.6.0
+numpy==2.5.3
+onnx==1.23.0
+onnxruntime==1.30.0
+packaging==26.0
+pathvalidate==3.3.1
+piper-tts==1.8.0
+protobuf==7.36.2
+pymupdf==1.28.2
+typing_extensions==4.15.0
